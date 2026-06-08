@@ -1,6 +1,7 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:0;
+    background-color: rgba(205, 205, 205, 0.742);
 }
 .navbar{
     width:100%;
@@ -167,4 +168,49 @@ body{
   .main-right img{
     max-width: 420px;
   }
+}
+
+.marquee{
+  width:100%;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.brand-track{
+  display:flex;
+  align-items:center;
+  gap: 48px;
+  white-space:nowrap;
+  will-change: transform;
+  animation-name: scroll-left;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Each brand slot: fixed box so all logos appear the same size */
+.brand-item{
+  width:120px;       /* fixed display width for each logo slot */
+  height:60px;       /* fixed display height for each logo slot */
+  flex: 0 0 auto;    /* prevent shrinking/growing */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.brand-item img{
+  max-width:100%;
+  max-height:100%;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  display:block;
+}
+
+/* Pause on hover */
+.marquee:hover .brand-track{
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left{
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }

@@ -35,23 +35,47 @@
         <div class="nav-end">
           <i class="fa-solid fa-headphones fa-xl" style="color: blue"></i>
           <div class="custom-select-container">
-                <div class="select-trigger" onclick="toggleDropdown()" style="display: flex; justify-content: center; align-items: center; cursor: pointer;">
-                    <img id="selected-flag" src="/public/ind.png" width="28" alt="India Flag" />
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
+            <div
+              class="select-trigger"
+              onclick="toggleDropdown()"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+              "
+            >
+              <img
+                id="selected-flag"
+                src="/public/ind.png"
+                width="28"
+                alt="India Flag"
+              />
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
 
-                
-                <ul class="select-options" id="options-list">
-                <li onclick="selectCountry('Malasia', '/public/Malaysia.svg')">
-                    <img src="/public/Malaysia.svg" width="20" alt="Malasia Flag" /> Malasia
-                </li>
-                <li onclick="selectCountry('Singapore', '/public/Singapore.png')">
-                    <img src="/public/singapore.png" width="20" alt="Singapore Flag" /> Singapore
-                </li>
-                <li onclick="selectCountry('United States', '/public/us.avif')">
-                    <img src="/public/us.avif" width="20" alt="United States Flag" /> United States
-                </li>
-                </ul>
+            <ul class="select-options" id="options-list">
+              <li onclick="selectCountry('Malasia', '/public/Malaysia.svg')">
+                <img src="/public/Malaysia.svg" width="20" alt="Malasia Flag" />
+                Malasia
+              </li>
+              <li onclick="selectCountry('Singapore', '/public/Singapore.png')">
+                <img
+                  src="/public/singapore.png"
+                  width="20"
+                  alt="Singapore Flag"
+                />
+                Singapore
+              </li>
+              <li onclick="selectCountry('United States', '/public/us.avif')">
+                <img
+                  src="/public/us.avif"
+                  width="20"
+                  alt="United States Flag"
+                />
+                United States
+              </li>
+            </ul>
           </div>
           <a><div class="login-btn">Login</div></a>
           <a
@@ -65,20 +89,54 @@
         </div>
       </div>
     </section>
-    <section class="hero-section" >
-        <div class="main">
-            <div class="main-left">
-                <h1 style="color:blue; font-size:45px; margin-bottom:0;">Best Payment Solution</h1>
-                <h1 style="font-size: 45px; margin-top:0;">for Online Payments India</h1>
-                <p>
-                    100+ Payment Methods | Easy Integration | Best-in-Class Performance
-                </p>
-                <a href="#"><div class=" login-btn signup-btn main-btn">Start Now</div></a>
-            </div>
-            <div class="main-right">
-                <img src="/public/hero_img.avif" alt="Hero Image" style="width: 80%; height: auto;" />
-            </div>
+    <section class="hero-section">
+      <div class="main">
+        <div class="main-left">
+          <h1 style="color: blue; font-size: 45px; margin-bottom: 0">
+            Best Payment Solution
+          </h1>
+          <h1 style="font-size: 45px; margin-top: 0">
+            for Online Payments India
+          </h1>
+          <p>
+            100+ Payment Methods | Easy Integration | Best-in-Class Performance
+          </p>
+          <a href="#"
+            ><div class="login-btn signup-btn main-btn">Start Now</div></a
+          >
         </div>
+        <div class="main-right">
+          <img
+            src="/public/hero_img.avif"
+            alt="Hero Image"
+            style="width: 80%; height: auto"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="brands" style="margin: 4px">
+      <div class="marquee" style="padding: 20px 0; overflow: hidden">
+        <div class="brand-track" id="brandTrack">
+          <div class="brand-item">
+            <img src="/public/bookmyshow_logo.png" alt="BookMyShow Logo" />
+          </div>
+          <div class="brand-item">
+            <img src="/public/lenscart_logo.png" alt="Lenskart Logo" />
+          </div>
+          <div class="brand-item">
+            <img src="/public/myntra_logo.png" alt="Myntra Logo" />
+          </div>
+          <div class="brand-item">
+            <img src="/public/nykaa_logo.png" alt="Nykaa Logo" />
+          </div>
+          <div class="brand-item">
+            <img src="/public/ola_logo.png" alt="Ola Logo" />
+          </div>
+          <div class="brand-item">
+            <img src="/public/zerodha_logo.png" alt="Zerodha Logo" />
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="app.js"></script>
