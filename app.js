@@ -73,4 +73,31 @@ function setupBrandMarquee() {
   }
 }
 
+function setupSectionReveal() {
+  const sections = document.querySelectorAll(
+    ".hero-section, .brands, .finance-section, .products-section, .security-section, .cta-section, .footer-section",
+  );
+
+  if (!sections.length) return;
+
+  sections.forEach((section) => section.classList.add("reveal-section"));
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    },
+  );
+
+  sections.forEach((section) => observer.observe(section));
+}
+
 document.addEventListener("DOMContentLoaded", setupBrandMarquee);
+document.addEventListener("DOMContentLoaded", setupSectionReveal);
