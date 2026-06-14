@@ -2,6 +2,26 @@ function toggleDropdown() {
   document.getElementById("options-list").classList.toggle("show");
 }
 
+function toggleMobileMenu() {
+  const navLinks = document.getElementById("nav-links");
+  const navEnd = document.getElementById("nav-end");
+  navLinks.classList.toggle("active");
+  navEnd.classList.toggle("active");
+}
+
+// Close mobile menu when a link is clicked
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-link");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      const navLinksContainer = document.getElementById("nav-links");
+      const navEnd = document.getElementById("nav-end");
+      navLinksContainer.classList.remove("active");
+      navEnd.classList.remove("active");
+    });
+  });
+});
+
 function selectCountry(name, flagUrl) {
   // Update the trigger view with the new selection
   document.getElementById("selected-text").innerText = name;

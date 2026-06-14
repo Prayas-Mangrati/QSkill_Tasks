@@ -22,7 +22,10 @@
     <section class="navbar">
       <div class="nav-div">
         <img class="logo" src="/public/razorpay_logo.png" alt="Razorpay Logo" />
-        <div class="nav-links">
+        <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="nav-links" id="nav-links">
           <a class="nav-link" href="#">Agentic Stack</a>
           <a class="nav-link" href="#">Payments</a>
           <a class="nav-link" href="#">Banking+</a>
@@ -32,7 +35,7 @@
           <a class="nav-link" href="#">Resources</a>
           <a class="nav-link" href="#">Pricing</a>
         </div>
-        <div class="nav-end">
+        <div class="nav-end" id="nav-end">
           <i class="fa-solid fa-headphones fa-xl" style="color: blue"></i>
           <div class="custom-select-container">
             <div
@@ -114,7 +117,7 @@
         </div>
       </div>
     </section>
-    <section class="brands" style="margin: 4px">
+    <section class="brands" ">
       <div class="marquee" style="padding: 20px 0; overflow: hidden">
         <div class="brand-track" id="brandTrack">
           <div class="brand-item">
@@ -134,6 +137,32 @@
           </div>
           <div class="brand-item">
             <img src="/public/zerodha_logo.png" alt="Zerodha Logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="finance-section">
+      <div class="finance-container">
+        <div class="finance-header">
+          <h2 class="finance-title">
+            The all in one
+            <span class="accent-text">finance platform</span>
+          </h2>
+          <h2 class="finance-subtitle">
+            you've been looking for
+          </h2>
+        </div>
+        
+        <div class="finance-features">
+          <span class="feature-label">With Razorpay, you can:</span>
+          <div class="features-list">
+            <div class="feature-item">Build AI Native</div>
+            <div class="feature-item">Accept Payments</div>
+            <div class="feature-item">Make Payouts</div>
+            <div class="feature-item">Start Business Banking</div>
+            <div class="feature-item">Automate Payroll</div>
+            <div class="feature-item">Get Credit & Loans</div>
           </div>
         </div>
       </div>
