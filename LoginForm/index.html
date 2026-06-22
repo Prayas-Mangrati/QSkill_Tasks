@@ -15,12 +15,13 @@
           </div>
           <h2>Welcome Back!</h2>
           <p>
-            "Success is the sum of small efforts repeated day in and day out."
+            ✔ Fast Access<br/>✔ Secure Authentication<br/>✔ Easy Password Recovery<br/><br/>"Your
+            journey starts with a single login"
           </p>
         </div>
       </div>
 
-      <div class="login-form">
+      <form class="login-form" id="loginForm">
         <h1>Login Form</h1>
         <p>Please enter your credentials to log in.</p>
         <div class="input-group">
@@ -33,21 +34,64 @@
             placeholder="Enter your username"
           />
           <label for="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            required
-            placeholder="Enter your password"
-          />
 
+          <div class="password-container">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Enter your password"
+            />
+
+            <div class="eye-icon" onclick="togglePassword()">👁️</div>
+            
+          </div>
           <input type="submit" value="Login" class="login-button" />
-        </div>
         <div class="links">
-          <p id="signup">Don't have an account? <a href="#">Sign up</a></p>
-          <p id="fogpas"><a href="#">Forgot password?</a></p>
+          <p id="signup">Don't have an account? <a href="#" id="signupLink">Sign up</a></p>
+          <p id="fogpas"><a href="#" onclick="openForgotModal()">Forgot password?</a></p>
         </div>
+      </form>
+    </div>
+    <div id="customAlert" class="custom-alert">
+      <div class="alert-box">
+        <h3 id="alertTitle"></h3>
+        <p id="alertMessage"></p>
+        <button onclick="closeAlert()">OK</button>
       </div>
     </div>
+    <div id="forgotModal" class="forgot-modal">
+  <div class="forgot-box">
+    <h2>Reset Password</h2>
+
+    <label>Username</label>
+    <input
+      type="text"
+      id="forgotUsername"
+      placeholder="Enter username"
+    />
+
+    <label>New Password</label>
+    <input
+      type="password"
+      id="newPassword"
+      placeholder="Enter new password"
+    />
+    <p id="forgotError"></p>
+
+    <div class="forgot-buttons">
+      <button id="updatePasswordBtn" onclick="updatePassword()">
+        Update
+      </button>
+
+      <button id="cancelForgotBtn" onclick="closeForgotModal()">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+
+    <script src="script.js"></script>
   </body>
 </html>
