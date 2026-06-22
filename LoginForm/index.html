@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-section">
+        <div class="quote">
+          <div class="image-container">
+            <img src="./public/user_logo.jpg" alt="User" />
+          </div>
+          <h2>Welcome Back!</h2>
+          <p>
+            "Success is the sum of small efforts repeated day in and day out."
+          </p>
+        </div>
+      </div>
+
+      <div class="login-form">
+        <h1>Login Form</h1>
+        <p>Please enter your credentials to log in.</p>
+        <div class="input-group">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="Enter your username"
+          />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="Enter your password"
+          />
+
+          <input type="submit" value="Login" class="login-button" />
+        </div>
+        <div class="links">
+          <p id="signup">Don't have an account? <a href="#">Sign up</a></p>
+          <p id="fogpas"><a href="#">Forgot password?</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

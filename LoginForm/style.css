@@ -1,0 +1,124 @@
+body{
+    background-color: #0676b6;
+    margin:0;
+}
+.container{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.side-section {
+    padding:30px;
+    width: 400px;
+    height:500px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+}
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote{
+    text-align: center;
+    padding: 30px;
+}
+
+.quote h2{
+    color: #0676b6;
+    margin-bottom: 20px;
+}
+
+.quote p{
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.login-form {
+    
+    height: 500px;
+    width:400px;
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+    border-left:2px solid #0676b6;
+    margin:0px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 38px;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color:grey;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.input-group{
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    font-weight: bold;
+    
+}
+#username{
+    margin-bottom:30px;
+}
+input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-button{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #0676b6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top:40px;
+}
+.login-button:hover{
+    background-color: #055a8c;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+}
+#fogpas{
+    margin-top:0px;
+    
+}
+#fogpas a{
+    text-decoration: none;
+}
+#signup{
+    margin-bottom: 20px;
+}
