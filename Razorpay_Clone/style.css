@@ -61,11 +61,13 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    cursor: pointer;
 }
 .signup-btn{
     background-color:blue;
     color:white;
     width:90px;
+    cursor: pointer;
 }
 /* custom css for dropdown */
 .custom-select-container {
