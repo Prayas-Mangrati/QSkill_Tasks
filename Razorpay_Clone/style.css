@@ -1,7 +1,8 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:0;
-    background: linear-gradient(180deg, #f4f7fb 0%, #eef3f8 100%);
+    background: linear-gradient(180deg, #f4f7fb 0%, #eef3f8 100%); 
+
 }
 .navbar{
     width:100%;
@@ -76,46 +77,43 @@ body{
   display: inline-block; 
 }
 
-/* 1. Control the box AFTER selection (Trigger) */
+
 .select-trigger {
-  width: 60px;             /* Narrow width: only fits the flag icon */
-  height: 45px;            /* Control your closed box height here */
+  width: 60px;             
+  height: 45px;            
   padding: 5px;
   border: 1px solid #ccc;
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers the flag inside the square box */
+  justify-content: center;
   background: white;
-  box-sizing: border-box;  /* Ensures padding doesn't break width/height */
+  box-sizing: border-box;  
 }
 
-/* Hide the text completely in the closed trigger box */
 #selected-text {
   display: none; 
 }
 
-/* 2. Control the open OPTIONS menu */
 .select-options {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 200px;            /* Independent wide menu to fit text easily */
-  max-height: 250px;       /* Control the maximum height of the options dropdown list */
-  overflow-y: auto;        /* Adds a scrollbar if options exceed max-height */
+  width: 200px;            
+  max-height: 250px;       
+  overflow-y: auto;       
   border: 1px solid #ccc;
   background: white;
-  margin: 4px 0 0 0;       /* Slight gap below the trigger */
+  margin: 4px 0 0 0;       
   padding: 0;
   list-style: none;
   display: none; 
   z-index: 10;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: makes the wide menu pop out */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-/* Control individual row item heights */
 .select-options li {
-  height: 40px;            /* Control the height of each option row here */
+  height: 40px;            
   padding: 0 10px;
   cursor: pointer;
   display: flex;
@@ -206,12 +204,11 @@ body{
   animation-iteration-count: infinite;
 }
 
-/* Each brand slot: fixed box so all logos appear the same size */
+
 .brand-item{
-  width:120px;       /* fixed display width for each logo slot */
-  height:60px;       /* fixed display height for each logo slot */
-  flex: 0 0 auto;    /* prevent shrinking/growing */
-  display:flex;
+  width:120px;       
+  height:60px;      
+  flex: 0 0 auto;   
   align-items:center;
   justify-content:center;
   background: rgba(255, 255, 255, 0.85);
@@ -229,7 +226,7 @@ body{
   display:block;
 }
 
-/* Pause on hover */
+
 .marquee:hover .brand-track{
   animation-play-state: paused;
 }
@@ -239,7 +236,7 @@ body{
   to { transform: translateX(-50%); }
 }
 
-/* Finance Section */
+
 .finance-section {
   width: 100%;
   background-color: #fff;

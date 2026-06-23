@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Song Downloader</title>
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+    
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+    <div class="container">
+
+        <div class="left-panel">
+
+            <div class="spotify-logo">
+                <i class="fa-brands fa-spotify"></i>
+                <span>Spotify Downloader</span>
+            </div>
+
+            <h1>
+                Download Your
+                <span>Favorite Tracks</span>
+            </h1>
+
+            <p>
+                Paste any Spotify track URL and instantly
+                get song details with a download link.
+            </p>
+
+            <div class="features">
+
+                <div class="feature">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Track Information</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Fast Download Access</span>
+                </div>
+
+                <div class="feature">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Powered by RapidAPI</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="right-panel">
+
+            <div class="download-card">
+
+                <h2>Download Spotify Song</h2>
+
+                <div class="input-box">
+
+                    <i class="fa-brands fa-spotify"></i>
+
+                    <input
+                        type="text"
+                        id="spotifyUrl"
+                        placeholder="Paste Spotify Song URL"
+                    >
+
+                </div>
+
+                <button
+                    class="download-search-btn"
+                    onclick="downloadSong()"
+                >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    Get Download Link
+                </button>
+
+                <!-- Loading State -->
+                <div id="loader" class="loader hidden">
+
+                    <div class="spinner"></div>
+
+                    <p>Fetching song details...</p>
+
+                </div>
+
+                <!-- Result Section -->
+                <div id="result" class="result-section">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
